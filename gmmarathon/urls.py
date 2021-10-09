@@ -30,5 +30,5 @@ urlpatterns = [
    # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
 patterns('',
-r'^media/(?P<'pexels-run-ffwpu-2002209.jpg'>.*)$', 'django.views.static.serve',
+r'^templates/(?P<'pexels-run-ffwpu-2002209.jpg'>.*)$', 'django.views.static.serve',
 {'document_root': settings.MEDIA_ROOT}),
