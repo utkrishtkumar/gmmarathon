@@ -31,6 +31,8 @@ DEBUG = "TRUE"
 
 ALLOWED_HOSTS = ['gmmarathon.herokuapp.com', 'localhost''127.0.0.1']
 
+MEDIA_ROOT = 'gmmarathon/templates'
+MEDIA_URL = '/templates/'
 
 # Application definition
 
