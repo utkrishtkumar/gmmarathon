@@ -31,8 +31,8 @@ DEBUG = "TRUE"
 
 ALLOWED_HOSTS = ['gmmarathon.herokuapp.com', 'localhost''127.0.0.1']
 
-MEDIA_ROOT = 'gmmarathon/templates'
-MEDIA_URL = '/templates/'
+MEDIA_ROOT = '/staticfiles/admin/'
+MEDIA_URL = '/img/'
 
 # Application definition
 
@@ -124,9 +124,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-STATICFILES_DIRS = ()
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/admin/'
+STATICFILES_DIRS = (BASE_DIR / "staticfiles",)
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
