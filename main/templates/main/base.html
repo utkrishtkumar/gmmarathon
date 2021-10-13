@@ -6,6 +6,79 @@
 <meta name="propeller" content="381f8fe56701f9800ad75db128dcbfc8">
 <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',4586090,document.body||document.documentElement)</script>
 <style>
+
+
+
+
+
+
+
+
+
+
+.button1:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+
     { margin: 0; padding: 0; }
 
     body { 
@@ -23,6 +96,7 @@
   cursor: pointer;
   outline: 0;
   position: relative;
+display: inline;
   top: 50%;
   border-style:none;
   left: 45%;
@@ -32,7 +106,8 @@
   .ultimate {
   text-color:yellow;
   transform: translateY(20%);
-  position: relative:;
+display: inline;
+  position: absolute:;
   font-size: 104px;
   }
 </style>
@@ -132,8 +207,27 @@ $('.navbar-light .dmenu').hover(function () {
     });
 });
 </script>
-<button class = "button1"> Register Now </button>
-<button class = "button1"> Log In </button>
+
+
+
+<div class="box">
+	
+<a class = "button1" href="#popup1"> Register Now </a>
+<a class = "button1" href="#popup1"> Log In </a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Note</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Due to Covid-19, the race will be postponed to January 5, 2022. The race details, including prize money will be updated soon.
+		</div>
+	</div>
+</div>
+
+
+
 <b><center><h1 class="ultimate" style="color: black;"> GM Marathon Gurugram</h1></center></b>
 
 </body>
