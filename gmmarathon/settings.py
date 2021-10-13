@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-*aep6l_m3+47afddgb)4ria2b8=_ofxybw(so%mbjvtp6_s!%&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "TRUE"
 
-ALLOWED_HOSTS = ['gmmarathon.herokuapp.com', 'localhost''127.0.0.1']
+ALLOWED_HOSTS = ['gmmarathon.herokuapp.com', 'localhost','127.0.0.1']
 
 MEDIA_ROOT = '/staticfiles/admin/'
 MEDIA_URL = '/img/'
